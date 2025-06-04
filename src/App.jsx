@@ -26,7 +26,7 @@ function App() {
       {/* Main Layout */}
       <div className="flex flex-col lg:flex-row">
         {/* Scrollable Content */}
-        <main className="w-full lg:w-[600px] bg-white overflow-y-auto" style={{ height: 'calc(100vh - 64px)' }}>
+        <main className="w-full lg:w-[750px] bg-white overflow-y-auto" style={{ height: 'calc(100vh - 64px)' }}>
           {itinerary.days.map(day => (
             <DayItinerary 
               key={day.id} 
