@@ -1,11 +1,9 @@
 import React from 'react';
 import { Menu } from 'lucide-react';
 
-interface HeaderProps {
-  title: string;
-}
 
-const Header: React.FC<HeaderProps> = ({ title }) => {
+
+const Header = ({ title }) => {
   return (
     <header className="flex justify-between items-center p-4 border-b border-gray-200">
       <div className="flex items-center">
