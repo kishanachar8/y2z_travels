@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DayItinerary from './components/DayItinerary';
 import { mockItinerary } from './data/mockData';
+import Header from "./components/Header"
 
 function App() {
   const [itinerary, setItinerary] = useState(mockItinerary);
@@ -17,11 +18,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Mobile Header */}
-      <div className="lg:hidden">
-        <header className="flex justify-between items-center p-4 bg-white">
-          <h1 className="text-2xl font-bold text-pink-600">Y2Z TRAVEL</h1>
-        </header>
-      </div>
+      <Header/>
 
       {/* Main Layout */}
       <div className="flex flex-col lg:flex-row">
